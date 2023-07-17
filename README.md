@@ -34,8 +34,7 @@
 
 
    ```javascript
-      
-      const output = await youtubedl(videoUrl, {
+   const output = await youtubedl(videoUrl, {
       output: filePath,
       noCheckCertificates: true,
       noWarnings: true,
