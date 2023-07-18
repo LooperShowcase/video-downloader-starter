@@ -18,16 +18,10 @@
 
 ## Update `server.js` File
 
-4. To get video information using the `youtubedl` library:
+4. To get video information using the `youtubedl` library, Add this code to `server.js` inside the `/download` endpoint:
    ```javascript
    const video_data = await youtubedl(videoUrl, { dumpSingleJson: true, noWarnings: true });
    const filePath = video_data.title + ".mp4";
-   ```
-   Add this code to `server.js` inside this endpoint:
-   ```javascript
-   app.get('/download', async (req, res) => {
-      //here
-   }
    ```
 
 5. Add this code that downloads the video to the same endpoint.
